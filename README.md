@@ -107,3 +107,13 @@ pytest
 ## License
 
 MIT — see [LICENSE](LICENSE).
+
+## Citation
+
+```bibtex
+@article{hallitschke2026pubmedophtha,
+  title   = {PubMed-Ophtha: An open resource for training ophthalmology vision-language models on scientific literature},
+  author  = {Hallitschke, Verena Jasmin and Eickhoff, Carsten and Berens, Philipp},
+  journal = {arXiv preprint arXiv:2605.02720},
+  year    = {2026}
+}
