@@ -1,0 +1,2 @@
+[files]
+extend-exclude = ["src/pmo_parser/const.py"]

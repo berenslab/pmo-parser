@@ -1,0 +1,23 @@
+[lint]
+select = [
+    "D",
+    "ARG",
+    'E',
+    'F',
+    'W',
+    'A',
+    'PLC',
+    'PLE',
+    'PLW',
+    'I',
+] # D for docstring conventions, ARG for undocumented arguments.
+ignore = ["D212", "D203"]
+fixable = ["ALL"]
+unfixable = []
+external = ["DOC"]
+
+[lint.per-file-ignores]
+"tests/**/*.py" = ["D", "E501"]
+
+[lint.isort]
+known-third-party = ["wandb"]
