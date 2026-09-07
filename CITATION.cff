@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use PubMed-Ophtha, the code in the repositories, or the released models, please cite the article in 'preferred-citation'."
+title: "Scientific Domain Knowledge Improves Vision-Language Fundus Models"
+abstract: "Vision-language models hold considerable promise for ophthalmology, but it remains unclear which training data source best conveys expert domain knowledge. Existing ophthalmic models are trained on fixed text templates, medical reports, or general biomedical literature, sources that have never been compared under matched conditions. To include domain-specific literature in this comparison, we present PubMed-Ophtha, a hierarchical dataset with high domain density of 102,023 panels with their subcaptions from 15,842 open-access articles in PubMed Central. We then finetuned identical CLIP models on each source, using a general biomedical literature model as baseline, and found that domain-specific literature achieved the best average performance across 110 clinical tasks, reaching a mean linear probing AUROC of 88.63% ahead of medical reports (85.68%). Restricting the dataset to fundus images, to the image count of the medical report dataset, or to articles unrelated to the evaluation datasets did not reduce performance, indicating that the gains likely stem from domain density. We release the dataset, the finetuned models, and the full generation pipeline."
+type: software
+authors:
+  - family-names: Hallitschke
+    given-names: Verena Jasmin
+  - family-names: Eickhoff
+    given-names: Carsten
+  - family-names: Berens
+    given-names: Philipp
+license: MIT
+repository-code: "https://github.com/berenslab/pmo-parser"
+url: "https://github.com/berenslab/pmo-parser"
+keywords:
+  - ophthalmology
+  - vision-language-model
+  - vlm
+  - dataset
+  - pubmed
+  - pubmed-central
+  - medical-imaging
+  - fundus
+  - oct
+preferred-citation:
+  type: article
+  title: "Scientific Domain Knowledge Improves Vision-Language Fundus Models"
+  authors:
+    - family-names: Hallitschke
+      given-names: Verena Jasmin
+    - family-names: Eickhoff
+      given-names: Carsten
+    - family-names: Berens
+      given-names: Philipp
+  year: 2026
+  journal: "arXiv preprint arXiv:2605.02720"
+  url: "https://arxiv.org/abs/2605.02720"
