@@ -12,18 +12,31 @@ A Python library and CLI tool for extracting figures and their captions from sci
 
 > **Note:** LayoutParser is installed from a fork that fixed import errors (see [here](https://github.com/verena-hallitschke/layout-parser))
 
+## Resources
+
+|                       |                                                                                                             |
+| --------------------- | ----------------------------------------------------------------------------------------------------------- |
+| Preprint              | [arXiv:2605.02720](https://arxiv.org/abs/2605.02720)                                                        |
+| Dataset               | [pubmed-ophtha/PubMed-Ophtha](https://huggingface.co/datasets/pubmed-ophtha/PubMed-Ophtha)                  |
+| Dataset pipeline      | [berenslab/pubmed-ophtha](https://github.com/berenslab/pubmed-ophtha)                                       |
+| PDF parser            | *This repository*                                                                                           |
+| CLIP experiments      | [berenslab/pmo-experiments](https://github.com/berenslab/pmo-experiments)                                   |
+| Figure-parsing models | [pubmed-ophtha/detection-models](https://huggingface.co/pubmed-ophtha/detection-models)                     |
+| PubMed-Ophtha CLIP    | [PubMed-Ophtha CLIP Models](https://huggingface.co/collections/pubmed-ophtha/pubmed-ophtha-clip-models)     |
+| Paper checkpoints     | [pubmed-ophtha/experiment-checkpoints](https://huggingface.co/pubmed-ophtha/experiment-checkpoints)         |
+
 ## Installation
 
 Requires Python 3.12+. Install with [uv](https://docs.astral.sh/uv/) or pip:
 
 ```bash
-pip install .
+pip install "git+https://github.com/berenslab/pmo-parser.git@v1.0.0"
 ```
 
 For deep-learning layout detection (optional):
 
 ```bash
-pip install ".[dl]"
+pip install "pmo-parser[dl] @ git+https://github.com/berenslab/pmo-parser.git@v1.0.0"
 ```
 
 ## Usage
@@ -111,9 +124,12 @@ MIT — see [LICENSE](LICENSE).
 ## Citation
 
 ```bibtex
-@article{hallitschke2026pubmedophtha,
-  title   = {PubMed-Ophtha: An open resource for training ophthalmology vision-language models on scientific literature},
-  author  = {Hallitschke, Verena Jasmin and Eickhoff, Carsten and Berens, Philipp},
-  journal = {arXiv preprint arXiv:2605.02720},
-  year    = {2026}
+@misc{hallitschke2026scientific,
+      title={Scientific Domain Knowledge Improves Vision-Language Fundus Models},
+      author={Verena Jasmin Hallitschke and Carsten Eickhoff and Philipp Berens},
+      year={2026},
+      eprint={2605.02720},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2605.02720},
 }
